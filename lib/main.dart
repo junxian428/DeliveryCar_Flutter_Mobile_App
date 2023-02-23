@@ -9,11 +9,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'HTTP Call Demo',
+      title: 'Dark Theme with HTTP Request',
       theme: ThemeData(
+        brightness: Brightness.dark,
         primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'HTTP Call Demo'),
+      home: MyHomePage(title: 'Dark Theme with HTTP Request'),
     );
   }
 }
